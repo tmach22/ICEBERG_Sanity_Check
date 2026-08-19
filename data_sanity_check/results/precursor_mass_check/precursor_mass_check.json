@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-08-19T13:08:33+00:00",
+  "dataset_path": "NIST20_data/NIST20_dataset.tsv",
+  "methodology": {
+    "expected_mz_formula": "ExactMolWt(RDKit mol from SMILES) + adduct_mass_shift[canonical_adduct]",
+    "error_ppm_formula": "1e6 * (precursor_mz - expected_mz) / expected_mz",
+    "adduct_scope": "Restricted to the canonical ~14-class adduct vocabulary -- singly-charged, single-molecule adducts only. Dimers, isotope satellites, and multiply-charged species are excluded (see 'unsupported_adducts_top20').",
+    "outlier_ppm_threshold": 20.0
+  },
+  "row_counts": {
+    "total_rows": 1019924,
+    "rows_with_unparseable_smiles": 15842,
+    "rows_with_unsupported_adduct": 377226,
+    "rows_checked": 638175
+  },
+  "unsupported_adducts_top20": {
+    "2M+H": 28548,
+    "M+H+2i": 26730,
+    "2M-H": 25266,
+    "M+2H": 11837,
+    "M-H+2i": 7174,
+    "M+H-C2H4O2": 5696,
+    "M+H-C4H8": 4949,
+    "M+H-3H2O": 4621,
+    "M-2H": 4567,
+    "M+H-CH4O": 4472,
+    "M+H-C2H4": 3763,
+    "M+2Na-H": 3453,
+    "M+H-C2H2O": 3087,
+    "M-H-CH3": 3057,
+    "M+H-CO": 3046,
+    "M+H-H2O+2i": 3033,
+    "M+H-C3H6": 2904,
+    "M+H-C2H6O": 2748,
+    "M+H-CH3": 2707,
+    "M+H-HF": 2402
+  },
+  "error_ppm_stats": {
+    "mean": -0.353139,
+    "median": 0.000641,
+    "std": 45.84186,
+    "min": -6319.730725,
+    "max": 0.527562,
+    "p01": -0.269329,
+    "p05": -0.187889,
+    "p95": 0.203057,
+    "p99": 0.301553
+  },
+  "within_ppm_thresholds": {
+    "1_ppm": {
+      "count": 638136,
+      "pct": 99.9939
+    },
+    "5_ppm": {
+      "count": 638136,
+      "pct": 99.9939
+    },
+    "10_ppm": {
+      "count": 638136,
+      "pct": 99.9939
+    },
+    "20_ppm": {
+      "count": 638136,
+      "pct": 99.9939
+    },
+    "50_ppm": {
+      "count": 638136,
+      "pct": 99.9939
+    },
+    "100_ppm": {
+      "count": 638136,
+      "pct": 99.9939
+    }
+  },
+  "by_instrument": {
+    "HCD": {
+      "n": 557733,
+      "median_abs_ppm": 0.0811,
+      "pct_within_5ppm": 99.9935,
+      "pct_within_50ppm": 99.9935
+    },
+    "IT-FT/ion trap with FTMS": {
+      "n": 48844,
+      "median_abs_ppm": 0.0775,
+      "pct_within_5ppm": 99.9939,
+      "pct_within_50ppm": 99.9939
+    },
+    "Q-TOF": {
+      "n": 31598,
+      "median_abs_ppm": 0.093,
+      "pct_within_5ppm": 100.0,
+      "pct_within_50ppm": 100.0
+    }
+  },
+  "by_adduct": {
+    "M+CHO2": {
+      "n": 7610,
+      "median_abs_ppm": 0.0177,
+      "pct_within_5ppm": 100.0
+    },
+    "M+Cl": {
+      "n": 7830,
+      "median_abs_ppm": 0.0154,
+      "pct_within_5ppm": 100.0
+    },
+    "M+H": {
+      "n": 308604,
+      "median_abs_ppm": 0.0885,
+      "pct_within_5ppm": 99.9948
+    },
+    "M+H-2H2O": {
+      "n": 15765,
+      "median_abs_ppm": 0.0779,
+      "pct_within_5ppm": 100.0
+    },
+    "M+H-CH2O2": {
+      "n": 6999,
+      "median_abs_ppm": 0.1284,
+      "pct_within_5ppm": 100.0
+    },
+    "M+H-H2O": {
+      "n": 82498,
+      "median_abs_ppm": 0.0906,
+      "pct_within_5ppm": 99.9806
+    },
+    "M+H-NH3": {
+      "n": 13811,
+      "median_abs_ppm": 0.133,
+      "pct_within_5ppm": 100.0
+    },
+    "M+K": {
+      "n": 963,
+      "median_abs_ppm": 0.0394,
+      "pct_within_5ppm": 100.0
+    },
+    "M+NH4": {
+      "n": 8527,
+      "median_abs_ppm": 0.0456,
+      "pct_within_5ppm": 100.0
+    },
+    "M+Na": {
+      "n": 38259,
+      "median_abs_ppm": 0.0349,
+      "pct_within_5ppm": 99.9817
+    },
+    "M-H": {
+      "n": 123291,
+      "median_abs_ppm": 0.079,
+      "pct_within_5ppm": 100.0
+    },
+    "M-H-CO2": {
+      "n": 12833,
+      "median_abs_ppm": 0.1129,
+      "pct_within_5ppm": 100.0
+    },
+    "M-H-H2O": {
+      "n": 11185,
+      "median_abs_ppm": 0.081,
+      "pct_within_5ppm": 100.0
+    }
+  },
+  "outliers": {
+    "threshold_ppm": 20.0,
+    "count": 39,
+    "pct_of_checked": 0.0061,
+    "by_adduct": {
+      "M+H": 16,
+      "M+H-H2O": 16,
+      "M+Na": 7
+    },
+    "csv_file": "outliers.csv"
+  }
+}

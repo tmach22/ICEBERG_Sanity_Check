@@ -1,0 +1,40 @@
+compound_name,spectrum_id,smiles,adduct,ion_mode,instrument,collision_energy,precursor_mz,expected_mz,error_da,error_ppm
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254633,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+H,Positive,HCD,7.0,316.9281,318.943738544,-2.015638544000012,-6319.73072492829
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254634,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+H,Positive,HCD,10.0,316.9281,318.943738544,-2.015638544000012,-6319.73072492829
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254635,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+H,Positive,HCD,12.0,316.9281,318.943738544,-2.015638544000012,-6319.73072492829
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254636,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+H,Positive,HCD,16.0,316.9281,318.943738544,-2.015638544000012,-6319.73072492829
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254637,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+H,Positive,HCD,20.0,316.9281,318.943738544,-2.015638544000012,-6319.73072492829
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254638,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+H,Positive,HCD,25.0,316.9281,318.943738544,-2.015638544000012,-6319.73072492829
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254639,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+H,Positive,HCD,31.0,316.9281,318.943738544,-2.015638544000012,-6319.73072492829
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254640,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+H,Positive,HCD,37.0,316.9281,318.943738544,-2.015638544000012,-6319.73072492829
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254641,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+H,Positive,HCD,45.0,316.9281,318.943738544,-2.015638544000012,-6319.73072492829
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254642,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+H,Positive,HCD,52.0,316.9281,318.943738544,-2.015638544000012,-6319.73072492829
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254643,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+H,Positive,HCD,60.0,316.9281,318.943738544,-2.015638544000012,-6319.73072492829
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254644,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+H,Positive,HCD,69.0,316.9281,318.943738544,-2.015638544000012,-6319.73072492829
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254645,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+H,Positive,HCD,78.0,316.9281,318.943738544,-2.015638544000012,-6319.73072492829
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254646,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+H,Positive,HCD,88.0,316.9281,318.943738544,-2.015638544000012,-6319.73072492829
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254647,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+H,Positive,HCD,99.0,316.9281,318.943738544,-2.015638544000012,-6319.73072492829
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254648,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+H,Positive,IT-FT/ion trap with FTMS,0.0,316.9281,318.943738544,-2.015638544000012,-6319.73072492829
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254664,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+Na,Positive,HCD,7.0,338.91,340.925682792,-2.01568279199995,-5912.381770398112
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254665,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+Na,Positive,HCD,10.0,338.91,340.925682792,-2.01568279199995,-5912.381770398112
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254666,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+Na,Positive,HCD,13.0,338.91,340.925682792,-2.01568279199995,-5912.381770398112
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254667,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+Na,Positive,HCD,16.0,338.91,340.925682792,-2.01568279199995,-5912.381770398112
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254668,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+Na,Positive,HCD,21.0,338.91,340.925682792,-2.01568279199995,-5912.381770398112
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254669,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+Na,Positive,HCD,26.0,338.91,340.925682792,-2.01568279199995,-5912.381770398112
+"1-(Trifluoromethyl)-1,2-benziodoxol-3(1H)-one",NIST3254670,O=C1O[IH2](C(F)(F)F)c2ccccc21,M+Na,Positive,IT-FT/ion trap with FTMS,0.0,338.91,340.925682792,-2.01568279199995,-5912.381770398112
+Hydroxy phenyl 4-methylbenzenesulfonoperoxoyl iodide,NIST3385102,Cc1ccc(S(=O)(=O)O[IH2](O)c2ccccc2)cc1,M+H-H2O,Positive,HCD,7.0,374.9546,376.970289728,-2.015689727999984,-5347.07849113093
+Hydroxy phenyl 4-methylbenzenesulfonoperoxoyl iodide,NIST3385103,Cc1ccc(S(=O)(=O)O[IH2](O)c2ccccc2)cc1,M+H-H2O,Positive,HCD,11.0,374.9546,376.970289728,-2.015689727999984,-5347.07849113093
+Hydroxy phenyl 4-methylbenzenesulfonoperoxoyl iodide,NIST3385104,Cc1ccc(S(=O)(=O)O[IH2](O)c2ccccc2)cc1,M+H-H2O,Positive,HCD,14.0,374.9546,376.970289728,-2.015689727999984,-5347.07849113093
+Hydroxy phenyl 4-methylbenzenesulfonoperoxoyl iodide,NIST3385105,Cc1ccc(S(=O)(=O)O[IH2](O)c2ccccc2)cc1,M+H-H2O,Positive,HCD,18.0,374.9546,376.970289728,-2.015689727999984,-5347.07849113093
+Hydroxy phenyl 4-methylbenzenesulfonoperoxoyl iodide,NIST3385106,Cc1ccc(S(=O)(=O)O[IH2](O)c2ccccc2)cc1,M+H-H2O,Positive,HCD,22.0,374.9546,376.970289728,-2.015689727999984,-5347.07849113093
+Hydroxy phenyl 4-methylbenzenesulfonoperoxoyl iodide,NIST3385107,Cc1ccc(S(=O)(=O)O[IH2](O)c2ccccc2)cc1,M+H-H2O,Positive,HCD,26.0,374.9546,376.970289728,-2.015689727999984,-5347.07849113093
+Hydroxy phenyl 4-methylbenzenesulfonoperoxoyl iodide,NIST3385108,Cc1ccc(S(=O)(=O)O[IH2](O)c2ccccc2)cc1,M+H-H2O,Positive,HCD,29.0,374.9546,376.970289728,-2.015689727999984,-5347.07849113093
+Hydroxy phenyl 4-methylbenzenesulfonoperoxoyl iodide,NIST3385109,Cc1ccc(S(=O)(=O)O[IH2](O)c2ccccc2)cc1,M+H-H2O,Positive,HCD,33.0,374.9546,376.970289728,-2.015689727999984,-5347.07849113093
+Hydroxy phenyl 4-methylbenzenesulfonoperoxoyl iodide,NIST3385110,Cc1ccc(S(=O)(=O)O[IH2](O)c2ccccc2)cc1,M+H-H2O,Positive,HCD,37.0,374.9546,376.970289728,-2.015689727999984,-5347.07849113093
+Hydroxy phenyl 4-methylbenzenesulfonoperoxoyl iodide,NIST3385111,Cc1ccc(S(=O)(=O)O[IH2](O)c2ccccc2)cc1,M+H-H2O,Positive,HCD,44.0,374.9546,376.970289728,-2.015689727999984,-5347.07849113093
+Hydroxy phenyl 4-methylbenzenesulfonoperoxoyl iodide,NIST3385112,Cc1ccc(S(=O)(=O)O[IH2](O)c2ccccc2)cc1,M+H-H2O,Positive,HCD,56.0,374.9546,376.970289728,-2.015689727999984,-5347.07849113093
+Hydroxy phenyl 4-methylbenzenesulfonoperoxoyl iodide,NIST3385113,Cc1ccc(S(=O)(=O)O[IH2](O)c2ccccc2)cc1,M+H-H2O,Positive,HCD,67.0,374.9546,376.970289728,-2.015689727999984,-5347.07849113093
+Hydroxy phenyl 4-methylbenzenesulfonoperoxoyl iodide,NIST3385114,Cc1ccc(S(=O)(=O)O[IH2](O)c2ccccc2)cc1,M+H-H2O,Positive,HCD,82.0,374.9546,376.970289728,-2.015689727999984,-5347.07849113093
+Hydroxy phenyl 4-methylbenzenesulfonoperoxoyl iodide,NIST3385115,Cc1ccc(S(=O)(=O)O[IH2](O)c2ccccc2)cc1,M+H-H2O,Positive,HCD,97.0,374.9546,376.970289728,-2.015689727999984,-5347.07849113093
+Hydroxy phenyl 4-methylbenzenesulfonoperoxoyl iodide,NIST3385116,Cc1ccc(S(=O)(=O)O[IH2](O)c2ccccc2)cc1,M+H-H2O,Positive,HCD,119.0,374.9546,376.970289728,-2.015689727999984,-5347.07849113093
+Hydroxy phenyl 4-methylbenzenesulfonoperoxoyl iodide,NIST3385117,Cc1ccc(S(=O)(=O)O[IH2](O)c2ccccc2)cc1,M+H-H2O,Positive,IT-FT/ion trap with FTMS,0.0,374.9546,376.970289728,-2.015689727999984,-5347.07849113093
