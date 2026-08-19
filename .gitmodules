@@ -1,3 +1,6 @@
 [submodule "vendor/ms-pred"]
 	path = vendor/ms-pred
 	url = git@github.com:coleygroup/ms-pred.git
+[submodule "vendor/ms-data-parser"]
+	path = vendor/ms-data-parser
+	url = https://github.com/rogerwwww/ms-data-parser.git
