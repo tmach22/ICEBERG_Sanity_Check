@@ -1,0 +1,3 @@
+[submodule "vendor/ms-pred"]
+	path = vendor/ms-pred
+	url = git@github.com:coleygroup/ms-pred.git
