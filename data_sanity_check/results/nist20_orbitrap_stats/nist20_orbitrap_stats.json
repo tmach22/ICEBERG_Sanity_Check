@@ -1,0 +1,118 @@
+{
+  "generated_at": "2026-08-19T08:04:45+00:00",
+  "source": "ICEBERG paper, Extended Data Table 2: Statistics of the Orbitrap spectra from the NIST'20 library.",
+  "dataset_path": "NIST20_data/NIST20_dataset.tsv",
+  "total_rows_loaded": 1004082,
+  "rows_dropped_unparseable_smiles": 15842,
+  "rows_dropped_invalid_adduct": 365907,
+  "methodology": {
+    "molecule_identity": "2D InChIKey (first block of Chem.MolToInchiKey, connectivity only), matching data_scripts/make_splits.py's 'existing split preservation uses only 2D InChIKey matching'.",
+    "valid_adduct_definition": "adduct string wrapped as '[<adduct>]<charge sign>' must be a key in ms_pred.common.chem_utils.ion2onehot_pos (the ~14-class canonical adduct vocabulary the released models embed).",
+    "instrument_variants": "The raw 'instrument' column has HCD (Orbitrap HCD) and 'IT-FT/ion trap with FTMS' (Orbitrap CID) as Orbitrap-family methods, and Q-TOF as a separate instrument. Restricted to instrument=='HCD' only, matching ion2onehot_pos's inline comment ('\"Orbitrap\": 0,  # Orbitrap HCD'). IT-FT (CID) and Q-TOF rows are excluded.",
+    "caveat": "Exact reproduction of the published counts was not achieved. The authors' raw-SDF -> labels.tsv conversion lives in a separate, unvendored repo (rogerwwww/ms-data-parser) whose exact filtering rules (dedup, spectral quality thresholds, etc.) we cannot inspect from this repo alone."
+  },
+  "paper_targets": {
+    "molecules": {
+      "Positive": 24403,
+      "Negative": 10959,
+      "total": 25541
+    },
+    "mol_adduct": {
+      "Positive": 35129,
+      "Negative": 14035,
+      "total": 49164
+    },
+    "mol_adduct_ce": {
+      "Positive": 391288,
+      "Negative": 139352,
+      "total": 530640
+    }
+  },
+  "variants": {
+    "orbitrap_hcd_only": {
+      "instruments_included": [
+        "HCD"
+      ],
+      "by_mode": {
+        "Positive": {
+          "unique_molecules": 24088,
+          "unique_spectra_mol_adduct": 36224,
+          "unique_spectra_mol_adduct_ce": 339295,
+          "row_count": 410871,
+          "paper_comparison": {
+            "unique_molecules": {
+              "ours": 24088,
+              "paper": 24403,
+              "delta": -315,
+              "pct_diff": -1.2908
+            },
+            "unique_spectra_mol_adduct": {
+              "ours": 36224,
+              "paper": 35129,
+              "delta": 1095,
+              "pct_diff": 3.1171
+            },
+            "unique_spectra_mol_adduct_ce": {
+              "ours": 339295,
+              "paper": 391288,
+              "delta": -51993,
+              "pct_diff": -13.2877
+            }
+          }
+        },
+        "Negative": {
+          "unique_molecules": 10873,
+          "unique_spectra_mol_adduct": 14541,
+          "unique_spectra_mol_adduct_ce": 126078,
+          "row_count": 146862,
+          "paper_comparison": {
+            "unique_molecules": {
+              "ours": 10873,
+              "paper": 10959,
+              "delta": -86,
+              "pct_diff": -0.7847
+            },
+            "unique_spectra_mol_adduct": {
+              "ours": 14541,
+              "paper": 14035,
+              "delta": 506,
+              "pct_diff": 3.6053
+            },
+            "unique_spectra_mol_adduct_ce": {
+              "ours": 126078,
+              "paper": 139352,
+              "delta": -13274,
+              "pct_diff": -9.5255
+            }
+          }
+        },
+        "total": {
+          "unique_molecules": 25210,
+          "unique_spectra_mol_adduct": 50765,
+          "unique_spectra_mol_adduct_ce": 465373,
+          "row_count": 557733,
+          "paper_comparison": {
+            "unique_molecules": {
+              "ours": 25210,
+              "paper": 25541,
+              "delta": -331,
+              "pct_diff": -1.296
+            },
+            "unique_spectra_mol_adduct": {
+              "ours": 50765,
+              "paper": 49164,
+              "delta": 1601,
+              "pct_diff": 3.2564
+            },
+            "unique_spectra_mol_adduct_ce": {
+              "ours": 465373,
+              "paper": 530640,
+              "delta": -65267,
+              "pct_diff": -12.2997
+            }
+          }
+        }
+      }
+    }
+  }
+}
