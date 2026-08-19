@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-08-19T08:27:12+00:00",
+  "split_type": "random",
+  "split_file": "vendor/ms-pred/data/spec_datasets/nist20/splits/split_1.tsv",
+  "paper_source": "ICEBERG paper, split-statistics figure, panel (a).",
+  "dataset_path": "NIST20_data/NIST20_dataset.tsv",
+  "universe_definition": "instrument=='HCD' (Orbitrap HCD only); adduct in ms_pred.common.chem_utils.ion2onehot_pos canonical vocabulary; ion_mode in {Positive, Negative}; molecule identity = 2D InChIKey. Same universe as compute_nist20_orbitrap_stats.py.",
+  "fold_assignment_method": "Split file 'spec' ids matched to one representative dataset row each (by normalized NIST numeric id) to recover molecule identity, then a molecule(2D InChIKey) -> fold lookup is built and applied to every universe row via its own 2D InChIKey -- not by matching individual spectrum ids row-for-row.",
+  "diagnostics": {
+    "rows_with_unparseable_smiles": 15842,
+    "split_spec_ids_unmatched_to_dataset": 43,
+    "molecules_with_conflicting_fold_assignment": 0,
+    "universe_rows_with_no_fold_assignment": 1254,
+    "universe_total_rows": 557733
+  },
+  "caveat": "As in compute_nist20_orbitrap_stats.py, exact reproduction of the published counts was not achieved -- the authors' raw-SDF -> labels.tsv conversion happens in a separate, unvendored repo (rogerwwww/ms-data-parser) whose exact filtering we can't inspect from here.",
+  "by_fold": {
+    "train": {
+      "molecules": 20272,
+      "spectra": 374688,
+      "paper_comparison": {
+        "molecules": {
+          "ours": 20272,
+          "paper": 20676,
+          "delta": -404,
+          "pct_diff": -1.954
+        },
+        "spectra": {
+          "ours": 374688,
+          "paper": 429751,
+          "delta": -55063,
+          "pct_diff": -12.8128
+        }
+      }
+    },
+    "val": {
+      "molecules": 2297,
+      "spectra": 42249,
+      "paper_comparison": {
+        "molecules": {
+          "ours": 2297,
+          "paper": 2309,
+          "delta": -12,
+          "pct_diff": -0.5197
+        },
+        "spectra": {
+          "ours": 42249,
+          "paper": 47815,
+          "delta": -5566,
+          "pct_diff": -11.6407
+        }
+      }
+    },
+    "test": {
+      "molecules": 2551,
+      "spectra": 47554,
+      "paper_comparison": {
+        "molecules": {
+          "ours": 2551,
+          "paper": 2556,
+          "delta": -5,
+          "pct_diff": -0.1956
+        },
+        "spectra": {
+          "ours": 47554,
+          "paper": 53074,
+          "delta": -5520,
+          "pct_diff": -10.4006
+        }
+      }
+    }
+  }
+}

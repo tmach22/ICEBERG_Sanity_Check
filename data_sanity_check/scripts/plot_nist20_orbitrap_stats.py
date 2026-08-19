@@ -52,6 +52,13 @@ def get_value(summary, series_key, metric_key, mode_label):
     return summary["variants"][series_key]["by_mode"][mode_label][metric_key]
 
 
+def get_pct_diff(summary, series_key, metric_key, mode_label):
+    """% delta of `series_key` vs. the paper, for non-paper series. None for the paper series itself."""
+    if series_key == "paper":
+        return None
+    return summary["variants"][series_key]["by_mode"][mode_label]["paper_comparison"][metric_key]["pct_diff"]
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--in-json", type=Path, default=DEFAULT_IN_JSON)
@@ -73,15 +80,17 @@ def main():
         ax.set_facecolor(SURFACE)
         for si, (series_key, series_label, color) in enumerate(SERIES):
             vals = [get_value(summary, series_key, metric_key, m) for m in MODE_ORDER]
+            pct_diffs = [get_pct_diff(summary, series_key, metric_key, m) for m in MODE_ORDER]
             offsets = [xi - group_width / 2 + si * bar_width + bar_width / 2 for xi in x]
             bars = ax.bar(offsets, vals, width=bar_width * 0.92, color=color, zorder=3,
                            label=series_label if ax is axes[0] else None)
-            for bar, v in zip(bars, vals):
+            for bar, v, pct in zip(bars, vals, pct_diffs):
+                label = f"{v:,}" if pct is None else f"{v:,} ({pct:+.1f}%)"
                 ax.text(
                     bar.get_x() + bar.get_width() / 2, bar.get_height(),
-                    f"{v:,}",
+                    label,
                     ha="center", va="bottom", fontsize=7.2, color=TEXT_PRIMARY,
-                    rotation=90 if v >= 10000 else 0,
+                    rotation=90,
                 )
 
         ax.set_xticks(list(x))
@@ -94,7 +103,7 @@ def main():
         ax.spines["left"].set_color(GRID_COLOR)
         ax.spines["bottom"].set_color(GRID_COLOR)
         ax.tick_params(axis="both", length=0, colors=TEXT_SECONDARY, labelsize=8.5)
-        ax.margins(y=0.18)
+        ax.margins(y=0.32)
 
     fig.suptitle(
         "NIST'20 Orbitrap spectra: paper (Extended Data Table 2) vs. our dataset",
