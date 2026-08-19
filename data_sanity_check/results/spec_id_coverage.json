@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-08-19T05:20:08+00:00",
+  "dataset": {
+    "path": "NIST20_data/NIST20_dataset.tsv",
+    "id_column": "spectrum_id",
+    "total_rows": 1019924,
+    "unique_normalized_ids": 1019924,
+    "unparseable_rows": 0
+  },
+  "split_dataset_names_included": [
+    "nist20"
+  ],
+  "split_file_stems_included": [
+    "split_1",
+    "scaffold_1"
+  ],
+  "normalization": {
+    "dataset_id_pattern": "^NIST(\\d+)$",
+    "split_id_pattern": "^nist_(\\d+)$",
+    "note": "Both sides are reduced to the bare numeric NIST id before comparison, e.g. dataset 'NIST1102013' and split 'nist_1102013' both normalize to '1102013'."
+  },
+  "splits": [
+    {
+      "dataset_name": "nist20",
+      "split_file": "scaffold_1.tsv",
+      "path": "vendor/ms-pred/data/spec_datasets/nist20/splits/scaffold_1.tsv",
+      "total_rows": 49164,
+      "unparseable_rows": 0,
+      "unique_spec_ids": 49164,
+      "found_in_dataset": 49121,
+      "missing_from_dataset": 43,
+      "coverage_pct": 99.9125,
+      "by_fold": {
+        "train": {
+          "total": 39331,
+          "found": 39298,
+          "coverage_pct": 99.9161
+        },
+        "test": {
+          "total": 4916,
+          "found": 4912,
+          "coverage_pct": 99.9186
+        },
+        "val": {
+          "total": 4917,
+          "found": 4911,
+          "coverage_pct": 99.878
+        }
+      }
+    },
+    {
+      "dataset_name": "nist20",
+      "split_file": "split_1.tsv",
+      "path": "vendor/ms-pred/data/spec_datasets/nist20/splits/split_1.tsv",
+      "total_rows": 49164,
+      "unparseable_rows": 0,
+      "unique_spec_ids": 49164,
+      "found_in_dataset": 49121,
+      "missing_from_dataset": 43,
+      "coverage_pct": 99.9125,
+      "by_fold": {
+        "train": {
+          "total": 39409,
+          "found": 39375,
+          "coverage_pct": 99.9137
+        },
+        "test": {
+          "total": 5195,
+          "found": 5189,
+          "coverage_pct": 99.8845
+        },
+        "val": {
+          "total": 4560,
+          "found": 4557,
+          "coverage_pct": 99.9342
+        }
+      }
+    }
+  ]
+}
