@@ -1,0 +1,38 @@
+dataset: nist20
+dist_fn: entropy
+sqrt_inten: true
+data_folder: data/spec_datasets/nist20
+full_labels: data/spec_datasets/nist20/retrieval/cands_df_split_1_50.tsv
+true_labels: data/spec_datasets/nist20/labels.tsv
+missing_true_candidate: 0
+missing_candidate_mapping: 0
+avg_decoys_in_full: 47.40817113123916
+avg_total_decoys: 47.40817113123916
+avg_true_dist: 0.3764524916375383
+avg_top_1: 0.3623048663139343
+avg_top_2: 0.5349778532981873
+avg_top_3: 0.6398149728775024
+avg_top_4: 0.7028329372406006
+avg_top_5: 0.7485064268112183
+avg_top_6: 0.7909038066864014
+avg_top_7: 0.8211601376533508
+avg_top_8: 0.8408170938491821
+avg_top_9: 0.8598959445953369
+avg_top_10: 0.8735787272453308
+avg_top_20: 0.9535555839538574
+metrics:
+  hit_rate_at_1: 0.3623048663139343
+  hit_rate_at_10: 0.8735787272453308
+  hit_rate_at_2: 0.5349778532981873
+  hit_rate_at_20: 0.9535555839538574
+  hit_rate_at_3: 0.6398149728775024
+  hit_rate_at_4: 0.7028329372406006
+  hit_rate_at_5: 0.7485064268112183
+  hit_rate_at_6: 0.7909038066864014
+  hit_rate_at_7: 0.8211601376533508
+  hit_rate_at_8: 0.8408170938491821
+  hit_rate_at_9: 0.8598959445953369
+n_individuals_scored: 5189
+dropped_empty_true_spectra_count: 0
+note: Aggregate metrics only, stripped of the per-spectrum 'individuals' list (which
+  contains NIST-derived SMILES/spec IDs) before committing to git.

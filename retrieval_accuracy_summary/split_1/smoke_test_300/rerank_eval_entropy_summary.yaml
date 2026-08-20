@@ -1,0 +1,38 @@
+dataset: nist20
+dist_fn: entropy
+sqrt_inten: true
+data_folder: data/spec_datasets/nist20
+full_labels: /data/nas-gpu/wang/tmach007/ICEBERG_Sanity_Check/preprocessing/smoke_test/cands_df_split_1_50_sample300.tsv
+true_labels: data/spec_datasets/nist20/labels.tsv
+missing_true_candidate: 0
+missing_candidate_mapping: 0
+avg_decoys_in_full: 46.38666666666666
+avg_total_decoys: 46.38666666666666
+avg_true_dist: 0.40538754891604184
+avg_top_1: 0.3333333432674408
+avg_top_2: 0.5166666507720947
+avg_top_3: 0.6299999952316284
+avg_top_4: 0.6899999976158142
+avg_top_5: 0.7400000095367432
+avg_top_6: 0.7900000214576721
+avg_top_7: 0.8100000023841858
+avg_top_8: 0.8333333134651184
+avg_top_9: 0.8433333039283752
+avg_top_10: 0.8533333539962769
+avg_top_20: 0.9300000071525574
+metrics:
+  hit_rate_at_1: 0.3333333432674408
+  hit_rate_at_10: 0.8533333539962769
+  hit_rate_at_2: 0.5166666507720947
+  hit_rate_at_20: 0.9300000071525574
+  hit_rate_at_3: 0.6299999952316284
+  hit_rate_at_4: 0.6899999976158142
+  hit_rate_at_5: 0.7400000095367432
+  hit_rate_at_6: 0.7900000214576721
+  hit_rate_at_7: 0.8100000023841858
+  hit_rate_at_8: 0.8333333134651184
+  hit_rate_at_9: 0.8433333039283752
+n_individuals_scored: 300
+dropped_empty_true_spectra_count: 0
+note: Aggregate metrics only, stripped of the per-spectrum 'individuals' list (which
+  contains NIST-derived SMILES/spec IDs) before committing to git.
