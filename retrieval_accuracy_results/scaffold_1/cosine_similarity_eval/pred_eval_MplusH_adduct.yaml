@@ -1,0 +1,15 @@
+dataset: nist20
+split: scaffold_1
+run: cosine_similarity_eval (full test set)
+adduct_filter: '[M+H]+'
+source_file: retrieval_accuracy_results/scaffold_1/cosine_similarity_eval/pred_eval_grouped_ion_type.tsv
+num_examples: 39863.0
+avg_cos_sim: 0.8000199567661869
+avg_cos_sim_zero_pep: 0.8002114667504727
+avg_mse: 0.0001085417960605955
+avg_entropy_sim: 0.7156776551833739
+avg_overlap_coeff: 0.8407038605598816
+avg_coverage: 0.8407038605598816
+avg_len_targ: 24.811955949125757
+avg_len_pred: 99.85618242480496
+avg_compound_mass: 305.6320157774145
