@@ -1,0 +1,27 @@
+description: Smoke-test retrieval accuracy subset filter for the [M+H]+ adduct
+source: rerank_eval_entropy_grouped_ion.tsv (from entropy retrieval_benchmark on MCP
+  sample300)
+adduct_filter: '[M+H]+'
+total_queries_evaluated: 300
+n_kept_[M+H]+: 123
+n_filtered_out_non_[M+H]+: 177
+fraction_kept_[M+H]+: 0.41
+adduct_counts:
+  '[M+Cl]-': 9
+  '[M+H3N+H]+': 5
+  '[M+H]+': 123
+  '[M+K]+': 1
+  '[M+Na]+': 34
+  '[M-H-CO2]-': 3
+  '[M-H-H2O]-': 8
+  '[M-H2O+H]+': 37
+  '[M-H4O2+H]+': 13
+  '[M-H]-': 67
+hit_rates_[M+H]+_subset:
+  top_1: 0.35772357723577236
+  top_2: 0.5691056910569106
+  top_3: 0.6504065040650406
+  top_5: 0.7317073170731707
+  top_10: 0.8455284552845529
+  top_20: 0.9186991869918699
+  num_examples: 123
