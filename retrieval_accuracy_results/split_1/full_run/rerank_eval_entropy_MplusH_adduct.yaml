@@ -1,0 +1,32 @@
+dataset: nist20
+split: split_1
+run: full_run
+dist_fn: entropy
+adduct_filter: '[M+H]+'
+source_file: retrieval_accuracy_results/split_1/full_run/rerank_eval_grouped_ion_entropy.tsv
+num_examples: 2224.0
+avg_total_decoys: 47.87679856115108
+avg_true_dist: 0.36384105959927276
+avg_top_1: 0.3965827338129496
+avg_top_2: 0.5773381294964028
+avg_top_3: 0.6825539568345323
+avg_top_4: 0.737410071942446
+avg_top_5: 0.783273381294964
+avg_top_6: 0.8196942446043165
+avg_top_7: 0.8498201438848921
+avg_top_8: 0.8660071942446043
+avg_top_9: 0.8844424460431655
+avg_top_10: 0.8970323741007195
+avg_top_20: 0.9640287769784173
+metrics:
+  hit_rate_at_1: 0.3965827338129496
+  hit_rate_at_2: 0.5773381294964028
+  hit_rate_at_3: 0.6825539568345323
+  hit_rate_at_4: 0.737410071942446
+  hit_rate_at_5: 0.783273381294964
+  hit_rate_at_6: 0.8196942446043165
+  hit_rate_at_7: 0.8498201438848921
+  hit_rate_at_8: 0.8660071942446043
+  hit_rate_at_9: 0.8844424460431655
+  hit_rate_at_10: 0.8970323741007195
+  hit_rate_at_20: 0.9640287769784173
