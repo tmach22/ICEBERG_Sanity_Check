@@ -1,0 +1,15 @@
+dataset: nist20
+split: split_1
+run: smoke_test_cosine_similarity_eval (MCP sample300 true molecules)
+adduct_filter: '[M+H]+'
+source_file: retrieval_accuracy_results/split_1/smoke_test_cosine_similarity_eval/pred_eval_grouped_ion_type.tsv
+num_examples: 1219.0
+avg_cos_sim: 0.7584556488281725
+avg_cos_sim_zero_pep: 0.7587048178600526
+avg_mse: 0.000131316120441523
+avg_entropy_sim: 0.6918878985275225
+avg_overlap_coeff: 0.8203738118876709
+avg_coverage: 0.8203738118876709
+avg_len_targ: 25.238720262510256
+avg_len_pred: 100.0
+avg_compound_mass: 305.5314859361198
